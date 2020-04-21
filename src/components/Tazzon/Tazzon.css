@@ -1,0 +1,37 @@
+.TazzonLook img {
+    position: absolute;
+    top: 350px;
+    left: 6%;
+    z-index: 2;
+    filter: grayscale(0%);
+}
+
+
+.IsAttacked {
+    animation-name: isAttackedEffect;
+  animation-duration: .5s;
+  animation-delay: .4s;
+}
+
+
+.Atacking {
+    animation-name: attacking;
+    animation-duration: .5s;
+}
+
+@keyframes attacking {
+    0%   {
+        top: 350px;
+        left: 6%;
+    }
+    /* 5%   {bottom: unset; left: unset} */
+    100% {
+        top: 245px;
+        left: 70%;
+    }
+  }
+
+  @keyframes isAttackedEffect {
+    0%   {filter: grayscale(0%);}
+    100% {filter: grayscale(100%);}
+  }

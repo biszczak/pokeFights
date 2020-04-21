@@ -1,0 +1,65 @@
+
+
+.Battlefield {
+    max-width: 600px;
+    height: calc(100vh - 55px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-size: cover !important;
+    background-position: 50% 0% !important;
+    font-family: 'Press Start 2P', cursive;
+    /* background-clip: border-box; */
+}
+
+.EndGame Button {
+    position: absolute;
+    bottom: 100px;
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    padding: 10px 10px;
+    -webkit-box-shadow: 4px 0 #08d5ac, -4px 0 #08d5ac, 0 -4px #08d5ac, 0 4px #08d5ac, 8px 0 #000, -8px 0 #000, 0 -8px #000, 0 8px #000, 0 0 0 4px #000;
+    box-shadow: 4px 0 #08d5ac, -4px 0 #08d5ac, 0 -4px #08d5ac, 0 4px #08d5ac, 8px 0 #000, -8px 0 #000, 0 -8px #000, 0 8px #000, 0 0 0 4px #000;
+    background-color: #08d5ac !important;
+    color: #000;
+    -webkit-transition: ease-in all .1s;
+    -o-transition: ease-in all .1s;
+    transition: ease-in all .1s;
+}
+
+.EndGame Button:hover {
+    font-size: 20px;
+}
+
+.EndGame {
+    max-width: 600px;
+    height: calc(100vh - 55px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-size: cover !important;
+    background-position: 50% 0% !important;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.EndGame h3 {
+    bottom: 230px;
+}
+
+.ShowEndGame {
+    animation-name: show;
+    animation-duration: .1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0%   {
+        opacity: 0;
+    }
+    /* 5%   {bottom: unset; left: unset} */
+    100% {
+        opacity: 1;
+    }
+  }

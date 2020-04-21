@@ -1,0 +1,109 @@
+.SelectTazzon {
+    max-width: 600px;
+    height: calc(100vh - 55px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-size: cover !important;
+    background-position: 50% 0% !important;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.Pokeball {
+    position: absolute;
+    cursor: pointer;
+    transition: ease-in all .3s;
+}
+
+.Pokeball:nth-child(1) {
+    top: 150px;
+    left: calc(50% - 50px)
+}
+
+.Pokeball:nth-child(2) {
+    top: 300px;
+    left: calc(50% - 150px);
+}
+
+.Pokeball:nth-child(3) {
+    top: 300px;
+    right: calc(50% - 150px);
+}
+
+.Tazzon {
+    position: absolute;
+    transition: ease-in all .7s;
+    top: calc(50% - 100px);
+    left: calc(50% - 73px);
+    transform: scale(0);
+}
+
+.Light {
+    position: absolute;
+    transition: ease-in all .3s;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+-moz-box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+animation-name: scaleLight;
+    animation-duration: .3s;
+    transform: scale(1);
+    opacity: 0;
+}
+
+.LightAnimation {
+    animation-name: scaleLight;
+    animation-duration: .3s;
+}
+
+h3 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.SelectTazzon Button {
+    position: absolute;
+    bottom: 70px;
+    font-size: 18px;
+    padding: 10px 10px;
+    box-shadow: 4px 0 #fe2866, -4px 0 #fe2866, 0 -4px #fe2866, 0 4px #fe2866, 8px 0 #000, -8px 0 #000, 0 -8px #000, 0 8px #000, 0 0 0 4px #000;
+    background-color: #fe2866 !important;
+    color: #000;
+    border: none;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    transition: ease-in all .1s;
+}
+
+.SelectTazzon Button:hover {
+    font-size: 20px;
+}
+
+
+@keyframes scaleLight {
+    0%   {
+        -webkit-box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+-moz-box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+box-shadow: -1px 0px 28px 20px rgba(255,255,255,1);
+transform: scale(1);
+opacity: 0;
+    }
+
+    100% {
+        -webkit-box-shadow: -1px 0px 28px 75px rgba(255,255,255,1);
+-moz-box-shadow: -1px 0px 28px 75px rgba(255,255,255,1);
+box-shadow: -1px 0px 28px 75px rgba(255,255,255,1);
+transform: scale(7);
+opacity: 1;
+    }
+  }

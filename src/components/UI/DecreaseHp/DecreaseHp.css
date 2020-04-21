@@ -1,0 +1,41 @@
+.Hp {
+    position: absolute;
+    font-size: 32px;
+    color: red;
+    right: 20px;
+    top: -75px;
+    transform: scale(0);
+}
+
+.Active {
+    opacity: 1;
+    right: 20px;
+    top: -75px;
+    transform: scale(0);
+    animation-name: decreaseHpEffect;
+  animation-duration: 1s;
+  animation-delay: .3s;
+}
+.EnemyActive {
+    opacity: 1;
+    right: 40px;
+    top: 20px;
+    transform: scale(0);
+    animation-name: decreaseHpEffectUser;
+  animation-duration: 1s;
+  animation-delay: .4s;
+}
+
+@keyframes decreaseHpEffect {
+    0%   {opacity: 1;right: 20px;top:-75px;transform: scale(0);}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;right: 140px;top: -175px;transform: scale(1);}
+  }
+
+  @keyframes decreaseHpEffectUser {
+    0%   {opacity: 1;right: 20px;top:-75px;transform: scale(0);}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;right: -140px;top: -175px;transform: scale(1);}
+  }

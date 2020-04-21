@@ -1,0 +1,34 @@
+.EnemyLook img{
+    position: absolute;
+    top: 245px;
+    right: 6%;
+    filter: grayscale(0%);
+}
+
+.IsAttacked {
+    animation-name: isAttackedEffect;
+  animation-duration: .5s;
+  animation-delay: .4s;
+}
+
+.EnemyAtacking {
+  animation-name: enemyAttacking;
+  animation-duration: .5s;
+}
+
+@keyframes enemyAttacking {
+  0%   {
+    top: 245px;
+    right: 6%;
+  }
+  /* 5%   {bottom: unset; left: unset} */
+  100% {
+    top: 357px;
+    right: 70%;
+  }
+}
+
+@keyframes isAttackedEffect {
+    0%   {filter: grayscale(0%);}
+    100% {filter: grayscale(100%);}
+  }

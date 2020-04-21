@@ -1,0 +1,27 @@
+.StartScreen {
+    max-width: 600px;
+    height: calc(100vh - 55px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-size: cover !important;
+    background-position: 50% 0% !important;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.StartScreen Button {
+    position: absolute;
+    bottom: 100px;
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    padding: 10px 10px;
+    box-shadow: 4px 0 #eece1b, -4px 0 #eece1b, 0 -4px #eece1b, 0 4px #eece1b, 8px 0 #000, -8px 0 #000, 0 -8px #000, 0 8px #000, 0 0 0 4px #000;
+    background-color: rgba(238, 206, 27, 1) !important;
+    color: #000;
+    transition: ease-in all .1s;
+}
+
+.StartScreen Button:hover {
+    font-size: 20px;
+}

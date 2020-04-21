@@ -1,0 +1,36 @@
+div.ButtonContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Button {
+    outline: none;
+    border: none;
+    background-color: #fe3636;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    box-shadow: 4px 0 #fe3636, -4px 0 #fe3636, 0 -4px #fe3636, 0 4px #fe3636, 8px 0 #131415, -8px 0 #131415, 0 -8px #131415, 0 8px #131415, 0 0 0 4px #131415;
+    margin: 8px auto;
+    background: none !important;
+    background-color: #fe3636 !important;
+    min-width: 28px;
+    padding-left: 7px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.Button:disabled {
+    /* font-family: 'PressStart2P', Fallback, sans-serif; */
+    background-color: #bbbdc9 !important;
+    box-shadow: 4px 0 #bbbdc9, -4px 0 #bbbdc9, 0 -4px #bbbdc9, 0 4px #bbbdc9, 8px 0 #131415, -8px 0 #131415, 0 -8px #131415, 0 8px #131415, 0 0 0 4px #131415;
+    color: #616161;
+    cursor: no-drop;
+}
+
+div p {
+    font-size: 10px;
+}
